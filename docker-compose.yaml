@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   dev1:
-    container_name: appfirst
+    container_name: app2
     build:
       context: .
       target: dev
@@ -10,7 +10,7 @@ services:
     ports:
       - 5000:5000
   prod1:
-    container_name: appsecond
+    container_name: app2
     build:
       context: .
       target: prod
