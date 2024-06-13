@@ -6,7 +6,7 @@ services:
       context: .
       target: dev
     networks:
-      - net1
+      - net11
     ports:
       - 5000:5000
   prod1:
@@ -15,9 +15,9 @@ services:
       context: .
       target: prod
     networks:
-      - net2
+      - net22
     ports:
       - 9000:9000
 networks:
-  net1:
-  net2:
+  net11:
+  net22:
