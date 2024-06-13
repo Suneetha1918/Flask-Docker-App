@@ -1,1 +1,23 @@
-
+version: '3.8'
+services:
+  dev1:
+    container_name: firstapp
+    build:
+      context: .
+      target: dev
+    networks:
+      - net1
+    ports:
+      - 5000:5000
+  prod1:
+    container_name: secondapp
+    build:
+      context: .
+      target: prod
+    networks:
+      - net2
+    ports:
+      - 8000:8000
+networks:
+  net1:
+  net2:
